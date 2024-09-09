@@ -18,9 +18,11 @@ import {
   categories,
   tvCategories,
 } from "@/utils/discover";
+
 import { SubPageLayout } from "./layouts/SubPageLayout";
 import { Icon, Icons } from "../components/Icon";
 import { PageTitle } from "./parts/util/PageTitle";
+
 export function Discover() {
   const { t } = useTranslation();
   const [genres, setGenres] = useState<Genre[]>([]);
