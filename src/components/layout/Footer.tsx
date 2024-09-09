@@ -30,7 +30,7 @@ function FooterLink(props: FooterLinkProps) {
   }, [navigate, props.to]);
 
   return (
-    <a
+  <!--  <a
       href={props.href}
       target={props.href ? "_blank" : undefined}
       rel="noreferrer"
@@ -39,7 +39,7 @@ function FooterLink(props: FooterLinkProps) {
     >
       <Icon icon={props.icon} className="text-2xl" />
       <span className="font-medium">{props.children}</span>
-    </a>
+    </a>-->
   );
 }
 
