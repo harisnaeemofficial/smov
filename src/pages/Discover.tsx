@@ -17,7 +17,9 @@ import {
   TVShow,
   categories,
   tvCategories,
+
 } from "@/utils/discover";
+
 
 import { SubPageLayout } from "./layouts/SubPageLayout";
 import { Icon, Icons } from "../components/Icon";
