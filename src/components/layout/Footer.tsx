@@ -29,7 +29,18 @@ function FooterLink(props: FooterLinkProps) {
     navigate(props.to);
   }, [navigate, props.to]);
 
-  
+  return (
+    <a
+      href={props.href}
+      target={props.href ? "_blank" : undefined}
+      rel="noreferrer"
+      className="tabbable rounded py-2 px-3 inline-flex cursor-pointer items-center space-x-3 transition-colors duration-200 hover:text-type-emphasis"
+      onClick={props.to ? navigateTo : undefined}
+    >
+      <Icon icon={props.icon} className="text-2xl" />
+      <span className="font-medium">{props.children}</span>
+    </a>
+  );
 }
 
 function Dmca() {
@@ -64,7 +75,15 @@ export function Footer() {
           <p className="mt-3">{t("footer.legal.disclaimerText")}</p>
         </div>
         <div className="flex flex-wrap gap-[0.5rem] -ml-3">
-         
+          <FooterLink icon={Icons.GITHUB} href={conf().GITHUB_LINK}>
+            {t("footer.links.github")}
+          </FooterLink>
+          <FooterLink icon={Icons.DISCORD} href={conf().DISCORD_LINK}>
+            {t("footer.links.discord")}
+          </FooterLink>
+          <FooterLink icon={Icons.TWITTER} href={conf().TWITTER_LINK}>
+            {t("footer.links.twitter")}
+          </FooterLink>
           <div className="inline md:hidden">
             <Dmca />
           </div>
