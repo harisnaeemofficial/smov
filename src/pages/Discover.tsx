@@ -9,6 +9,7 @@ import { ThiccContainer } from "@/components/layout/ThinContainer";
 import { Divider } from "@/components/utils/Divider";
 import { Flare } from "@/components/utils/Flare";
 import { conf } from "@/setup/config";
+
 import {
   Category,
   Genre,
@@ -17,12 +18,10 @@ import {
   TVShow,
   categories,
   tvCategories,
-  
 } from "@/utils/discover";
 
 import { SubPageLayout } from "./layouts/SubPageLayout";
 import { Icon, Icons } from "../components/Icon";
-
 import { PageTitle } from "./parts/util/PageTitle";
 
 export function Discover() {
