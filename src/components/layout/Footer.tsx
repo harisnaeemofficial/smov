@@ -29,18 +29,7 @@ function FooterLink(props: FooterLinkProps) {
     navigate(props.to);
   }, [navigate, props.to]);
 
-  return (
-    <a
-      href={props.href}
-      target={props.href ? "_blank" : undefined}
-      rel="noreferrer"
-      className="tabbable rounded py-2 px-3 inline-flex cursor-pointer items-center space-x-3 transition-colors duration-200 hover:text-type-emphasis"
-      onClick={props.to ? navigateTo : undefined}
-    >
-      <Icon icon={/*props.icon*/} className="text-2xl" />
-      <span className="font-medium">{/*props.children*/}</span>
-    </a>
-  );
+  
 }
 
 function Dmca() {
