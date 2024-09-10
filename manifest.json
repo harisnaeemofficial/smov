@@ -1,12 +1,12 @@
 {
-  "name": "sudo-flix",
-  "short_name": "sudo-flix",
+  "name": "",
+  "short_name": "NextFilm",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#120f1d",
   "lang": "en",
   "scope": "/",
-  "description": "Watch your favorite shows and movies for free with no ads ever! (っ'ヮ'c)",
+  "description": "Watch your favorite shows and movies for free!",
   "theme_color": "#120f1d",
   "icons": [
     {
